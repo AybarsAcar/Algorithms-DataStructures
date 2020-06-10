@@ -10,7 +10,7 @@ function anagram(str1, str2){
     lookup[letter] ? lookup[letter] += 1 : lookup[letter] = 1;
   }
 
-  for (let i = 0); i<str2.length; i++){
+  for (let i = 0; i<str2.length; i++){
     let letter = str2[i];
     //cant find it in the object we created in the first loop then not an Anagram
     if (!lookup[letter]){
@@ -21,3 +21,20 @@ function anagram(str1, str2){
   }
   return true;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+//Test
+
+console.log(anagram("aaabbb", "ababab"));
+console.log(anagram("hello world", "olle hwoldr"));
+console.log(anagram("abcdefg !", "a dc!begf"));

@@ -7,7 +7,7 @@ function maxSubarraySum(arr, num) {
   var max = -Infinity;
 
   for (var i = 0; i < arr.length - num - 1; i ++){
-    temp = 0;
+    var temp = 0;
     for (var j = 0; j < num; j ++){
       temp += arr[i + j];
     }
