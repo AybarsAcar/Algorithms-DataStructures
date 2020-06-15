@@ -10,9 +10,13 @@ function binarySearch(arr, n) {
     } else {
       left = middle + 1;
     }
+    //update the middle after every iteration
     middle = Math.floor((left + right) / 2);
   }
   if (arr[middle] == n) return middle;
+
+  //return this if the conditional statements dont satisfy
+  // -1 indicates that the element is NOT in the array
   return -1;
 }
 

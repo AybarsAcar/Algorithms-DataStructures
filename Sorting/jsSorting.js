@@ -15,3 +15,8 @@ console.log([2,14,4,145,12,45,1324,315,2453,1342,324].sort(descending));
 function sortLength (str1, str2){
   return str1.length - str2.length;
 }
+
+
+//ascending order sorting using an array callback function
+array = [12,1,342,6,23,634,342,35,42,3];
+array.sort((a, b) => a-b);

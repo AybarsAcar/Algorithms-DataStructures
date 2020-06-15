@@ -27,7 +27,7 @@ function bubbleSortS(arr) {
 
 //bubble sort optimised for nearly sorted arrays
 function bubbleSortOpt(arr) {
-
+  //keep track of the swaps so we dont check if there was no swap
   var noSwap;
 
   for (var i = arr.length - 1; i >= 0; i--) {
